@@ -15,3 +15,8 @@ CSS Error Detector is a real-time CSS validation tool powered by Nord.js. It all
 1. Clone the repository:
    ```bash
    git clone https://github.com/RizwanAli-IT/CSS-Error-Detector.git
+
+2. Navigate to the project directory:
+   ```bash
+   cd CSS-Error-Detector
+
