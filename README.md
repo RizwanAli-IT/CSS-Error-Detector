@@ -37,8 +37,12 @@ CSS Error Detector is a real-time CSS validation tool powered by Nord.js. It all
   ```bash
   User inputs incorrect CSS code like widhtj:20;
 - Step 2: Error Detection
- ```bash
+  ```bash
   The validator highlights the error and shows a detailed message.
+- Step 3: Apply Fix
+  ```bash
+  Click "Apply Fix" to automatically correct the mistake.
+
 
 
 
