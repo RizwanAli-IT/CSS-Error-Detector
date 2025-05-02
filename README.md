@@ -45,7 +45,10 @@ CSS Error Detector is a real-time CSS validation tool powered by Nord.js. It all
 - Step 3: Click "Apply Fix" to automatically correct the mistake.
 
   ![Step 3 - Apply Fix](./assets/css-error-step3.png)
+  
+- Step 4: Error Resolved
 
+  ![Step 4 - Error Resolved](./assets/css-error-step4.png)
 
 
 
