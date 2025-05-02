@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Error Detector</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/dracula.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/material.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo-container">
+        <div class="logo">
+          <i class="fas fa-code"></i>
+        </div>
+        <h1>CSS Error Detector</h1>
+      </div>
+      <p>Advanced real-time CSS validation with intelligent error detection</p>
+      <div class="theme-toggle">
+        <input type="checkbox" id="theme-switch" class="theme-switch">
+        <label for="theme-switch" class="theme-switch-label">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon"></i>
+          <span class="ball"></span>
+        </label>
+      </div>
+    </header>
+
+    <div class="features">
+      <div class="feature">
+        <i class="fas fa-bolt"></i>
+        <span>Real-time Validation</span>
+      </div>
+      <div class="feature">
+        <i class="fas fa-spell-check"></i>
+        <span>Typo Detection</span>
+      </div>
+      <div class="feature">
+        <i class="fas fa-magic"></i>
+        <span>Auto Suggestions</span>
+      </div>
+      <div class="feature">
+        <i class="fas fa-search"></i>
+        <span>Spacing Issues</span>
+      </div>
+    </div>
+
+    <main>
+      <div class="editor-container">
+        <div class="editor-header">
+          <h2><i class="fas fa-code"></i> CSS Code</h2>
+          <div class="editor-controls">
+            <div class="validation-mode">
+              <input type="checkbox" id="realtime-toggle" class="realtime-toggle" checked>
+              <label for="realtime-toggle">Real-time Validation</label>
+            </div>
+            <button id="validate-btn" class="primary-btn"><i class="fas fa-check-circle"></i> Validate</button>
+            <button id="clear-btn" class="secondary-btn"><i class="fas fa-trash"></i> Clear</button>
+            <button id="sample-btn" class="secondary-btn"><i class="fas fa-file-code"></i> Sample</button>
+          </div>
+        </div>
+        <div class="editor-wrapper">
+          <textarea id="css-code"></textarea>
+          <div id="line-errors" class="line-errors"></div>
+        </div>
+      </div>
+
+      <div class="results-container">
+        <div class="results-header">
+          <h2><i class="fas fa-list-check"></i> Validation Results</h2>
+          <div class="result-stats">
+            <span id="error-count" class="error-count"><i class="fas fa-times-circle"></i> 0 Errors</span>
+            <span id="warning-count" class="warning-count"><i class="fas fa-exclamation-triangle"></i> 0 Warnings</span>
+          </div>
+        </div>
+        <div id="results" class="results">
+          <div class="placeholder">
+            <i class="fas fa-code fa-3x"></i>
+            <p>Start typing or paste your CSS code to see validation results</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p><span class="made-by">Made by <strong>Rizwan Ali</strong></span> | CSS Error Detector - Advanced CSS validation tool</p>
+      <div class="social-links">
+        <a href="https://github.com/RizwanAli-IT" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:rizwan60430@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://wa.me/923439072178" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </footer>
+  </div>
+
+  <!-- CodeMirror Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/css/css.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/addon/edit/closebrackets.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/addon/edit/matchbrackets.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/addon/lint/lint.min.js"></script>
+
+  <!-- App JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
