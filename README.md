@@ -20,3 +20,15 @@ CSS Error Detector is a real-time CSS validation tool powered by Nord.js. It all
    ```bash
    cd CSS-Error-Detector
 
+3. Install dependencies:
+   ```bash
+   npm install
+
+4. Start the application:
+   ```bash
+   npm start
+
+5. Open your browser and visit:
+   ```bash
+   http://localhost:3000
+
