@@ -34,19 +34,15 @@ CSS Error Detector is a real-time CSS validation tool powered by Nord.js. It all
 
 ## How It Works
 
-- **Step 1: Enter Invalid CSS**
-- 
-  User inputs incorrect CSS code like `widhtj:20;`
+- Step 1: User inputs incorrect CSS code like `widhtj:20;`
 
   ![Step 1 - Enter Invalid CSS](./assets/css-error-step1.png)
 
-- **Step 2: Error Detection**
-
-  The validator highlights the error and shows a detailed message.
+- Step 2: The validator highlights the error and shows a detailed message.
 
   ![Step 2 - Error Detection](./assets/css-error-step2.png)
 
-- **Step 3: Apply Fix**
+- Step 3: Click "Apply Fix" to automatically correct the mistake.
 
   Click "Apply Fix" to automatically correct the mistake.
 
